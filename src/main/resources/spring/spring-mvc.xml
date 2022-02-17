@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!-- 开启注解扫描  扫描spring注解注册到spring容器中 -->
-    <context:component-scan base-package="com.test.user.controller" />
+    <context:component-scan base-package="com.hx.user.controller" />
     <!-- 配置视图解析器，并指定视图所在的文件夹 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/" />
