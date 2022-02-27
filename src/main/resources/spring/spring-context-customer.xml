@@ -19,7 +19,7 @@
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService   通过配置实现
 
    -->
-    <dubbo:reference id="userServiceImpl" registry="local" interface="com.hx.service.IUserService" check="false" protocol="dubbo"/>
+    <dubbo:reference id="userServiceImpl" registry="local" interface="com.hx.service.IUserService" check="false" protocol="dubbo" timeout="60000"/>
     <!-- 再配置文件中加上<dubbo:annotation>，它会扫描所有注册bean的java类，发现带”@Reference”标签的属性，
         它会去寻找发布的provider是否有匹配的接口，有就自动注入。 -->
 
