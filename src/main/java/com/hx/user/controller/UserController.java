@@ -24,6 +24,7 @@ public class UserController {
         log.error("eeror");
         System.out.println("111");
         User param = new User();
+        System.out.println("11");
         param.setId(1);
         User user  =  userService.selectById(param);
         ModelAndView mav=new ModelAndView("user");
