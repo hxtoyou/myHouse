@@ -26,6 +26,7 @@ public class UserController {
         User param = new User();
         System.out.println("11");
         System.out.println("11");
+        System.out.println("11");
         param.setId(1);
         User user  =  userService.selectById(param);
         ModelAndView mav=new ModelAndView("user");
